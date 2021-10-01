@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace ClickerGameConsoleLine
 {
-    class ClickerFactory
+    class Clicker
     {
         static void Main(string[] args)
         {
@@ -49,11 +49,12 @@ namespace ClickerGameConsoleLine
                     points += manualClick;
                     totalPoints += manualClick;
                 }
-                //Upgrade EM
+                //Upgrade Menu
                 if (cki.Key == ConsoleKey.U)
                 {
                     Console.WriteLine("Welcome to the Upgrade Menu!");
                     Console.WriteLine($"Current Points: {points}");
+                    Console.WriteLine($"Manual Click Level: {manualClick}  Auto Click Level: {autoClick}");
                     Console.WriteLine($"A - Auto Clicker Upgrade Price {autoUpgradeCost}");
                     Console.WriteLine($"M - Manual Clicker Upgrade Price {manualUpgradeCost}");
                     
