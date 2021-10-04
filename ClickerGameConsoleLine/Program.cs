@@ -17,7 +17,7 @@ namespace ClickerGameConsoleLine
             var manualUpgradeCost = 10;
             var manualUpgradeCostMulitplier = 1.1;
             //Auto Clicker
-            var autoClick = 0;
+            var autoClick = 50;
             var autoUpgradeCost = 50;
             var autoUpgradeCostMulitplier = 1.5;
 
@@ -34,9 +34,9 @@ namespace ClickerGameConsoleLine
                     //Auto Clicker
                     if (autoClick > 0)
                     {
-                        Console.Clear();
                         points += automaticAdder(time, autoClick);
                         totalPoints += automaticAdder(time, autoClick);
+                        Console.Clear();
                         Console.WriteLine($"Points: {points} Total Points: {totalPoints} Points Per Click: {manualClick}");
                     }
                 }
